@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BNMToDoItem.h"
 
 @interface BNMAddToDoItemViewController : UIViewController
+
+@property BNMToDoItem *toDoItem;
 
 @end

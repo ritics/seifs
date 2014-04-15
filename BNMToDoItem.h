@@ -10,4 +10,11 @@
 
 @interface BNMToDoItem : NSObject
 
+@property (nonatomic, strong) NSString *identifier;
+@property (nonatomic, strong) NSString *itemName;
+@property BOOL completed;
+@property (nonatomic, strong) NSDate *creationDate;
+
+- (id)initWithName:(NSString *)itemName completed:(BOOL)completed creationDate:(NSDate *)creationDate;
+
 @end

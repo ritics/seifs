@@ -10,9 +10,28 @@
 
 @interface BNMAddToDoItemViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+
 @end
 
+
+
 @implementation BNMAddToDoItemViewController
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Ja nav nospiesta poga Done, tad jaunu
+    // ierakstu neveido.
+    if (sender != self.doneButton) return;
+    
+    if (self.textField.text.length > 0) {
+        self.toDoItem = [[BNMToDoItem alloc] init];
+        self.toDoItem.itemName = self.textField.text;
+        self.toDoItem.completed = NO;
+    }
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,11 +42,15 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
