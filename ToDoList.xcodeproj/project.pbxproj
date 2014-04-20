@@ -29,6 +29,10 @@
 		937FE3EB18FC8B41004E273C /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 937FE3E618FC8B41004E273C /* right_arrow.png */; };
 		937FE3EC18FC8B41004E273C /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 937FE3E718FC8B41004E273C /* right_arrow@2x.png */; };
 		937FE3EE18FC8D3B004E273C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937FE3ED18FC8D3B004E273C /* QuartzCore.framework */; };
+		937FE3F118FDD8EF004E273C /* CKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE3F018FDD8EF004E273C /* CKViewController.m */; };
+		937FE3F418FE4C7E004E273C /* BNMCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE3F318FE4C7E004E273C /* BNMCalendarView.m */; };
+		937FE3F718FE6162004E273C /* BNMCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE3F618FE6162004E273C /* BNMCalendarViewController.m */; };
+		93BBD99718FF11B90082FC9C /* BNMCalendarColViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BBD99618FF11B90082FC9C /* BNMCalendarColViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,14 @@
 		937FE3E618FC8B41004E273C /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		937FE3E718FC8B41004E273C /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 		937FE3ED18FC8D3B004E273C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		937FE3EF18FDD8EF004E273C /* CKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKViewController.h; sourceTree = "<group>"; };
+		937FE3F018FDD8EF004E273C /* CKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKViewController.m; sourceTree = "<group>"; };
+		937FE3F218FE4C7E004E273C /* BNMCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNMCalendarView.h; sourceTree = "<group>"; };
+		937FE3F318FE4C7E004E273C /* BNMCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNMCalendarView.m; sourceTree = "<group>"; };
+		937FE3F518FE6162004E273C /* BNMCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNMCalendarViewController.h; sourceTree = "<group>"; };
+		937FE3F618FE6162004E273C /* BNMCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNMCalendarViewController.m; sourceTree = "<group>"; };
+		93BBD99518FF11B90082FC9C /* BNMCalendarColViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNMCalendarColViewController.h; sourceTree = "<group>"; };
+		93BBD99618FF11B90082FC9C /* BNMCalendarColViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNMCalendarColViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,20 +114,28 @@
 		937FE39B18F95313004E273C = {
 			isa = PBXGroup;
 			children = (
-				937FE3E118FC8B41004E273C /* CKCalendarView.h */,
-				937FE3E218FC8B41004E273C /* CKCalendarView.m */,
+				937FE3A518F95313004E273C /* Products */,
+				937FE3A618F95313004E273C /* Frameworks */,
 				937FE3E318FC8B41004E273C /* resources */,
+				937FE3AD18F95313004E273C /* ToDoList */,
 				937FE3D618F95FDD004E273C /* Main.storyboard */,
+				93BBD99518FF11B90082FC9C /* BNMCalendarColViewController.h */,
+				93BBD99618FF11B90082FC9C /* BNMCalendarColViewController.m */,
+				937FE3F518FE6162004E273C /* BNMCalendarViewController.h */,
+				937FE3F618FE6162004E273C /* BNMCalendarViewController.m */,
+				937FE3F218FE4C7E004E273C /* BNMCalendarView.h */,
+				937FE3F318FE4C7E004E273C /* BNMCalendarView.m */,
 				937FE3DB18F9AE63004E273C /* BNMToDoListTableViewController.h */,
 				937FE3DC18F9AE63004E273C /* BNMToDoListTableViewController.m */,
 				937FE3DE18F9E215004E273C /* BNMToDoItem.h */,
 				937FE3DF18F9E215004E273C /* BNMToDoItem.m */,
 				937FE3D818F9AC91004E273C /* BNMAddToDoItemViewController.h */,
 				937FE3D918F9AC91004E273C /* BNMAddToDoItemViewController.m */,
-				937FE3AD18F95313004E273C /* ToDoList */,
+				937FE3E118FC8B41004E273C /* CKCalendarView.h */,
+				937FE3E218FC8B41004E273C /* CKCalendarView.m */,
+				937FE3EF18FDD8EF004E273C /* CKViewController.h */,
+				937FE3F018FDD8EF004E273C /* CKViewController.m */,
 				937FE3C618F95313004E273C /* ToDoListTests */,
-				937FE3A618F95313004E273C /* Frameworks */,
-				937FE3A518F95313004E273C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,11 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937FE3F718FE6162004E273C /* BNMCalendarViewController.m in Sources */,
+				937FE3F118FDD8EF004E273C /* CKViewController.m in Sources */,
 				937FE3E818FC8B41004E273C /* CKCalendarView.m in Sources */,
+				93BBD99718FF11B90082FC9C /* BNMCalendarColViewController.m in Sources */,
 				937FE3B818F95313004E273C /* BNMAppDelegate.m in Sources */,
 				937FE3B418F95313004E273C /* main.m in Sources */,
 				937FE3DD18F9AE63004E273C /* BNMToDoListTableViewController.m in Sources */,
 				937FE3E018F9E215004E273C /* BNMToDoItem.m in Sources */,
+				937FE3F418FE4C7E004E273C /* BNMCalendarView.m in Sources */,
 				937FE3DA18F9AC91004E273C /* BNMAddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +520,7 @@
 				937FE3D218F95313004E273C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		937FE3D318F95313004E273C /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				937FE3D518F95313004E273C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

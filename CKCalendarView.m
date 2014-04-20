@@ -133,6 +133,8 @@
     return [self initWithStartDay:firstDay frame:CGRectMake(0, 0, 320, 320)];
 }
 
+
+// rl šis izpildās
 - (void)_init:(CKCalendarStartDay)firstDay {
     self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     [self.calendar setLocale:[NSLocale currentLocale]];
@@ -265,8 +267,17 @@
     self.prevButton.frame = CGRectMake(BUTTON_MARGIN, BUTTON_MARGIN, 48, 38);
     self.nextButton.frame = CGRectMake(self.bounds.size.width - 48 - BUTTON_MARGIN, BUTTON_MARGIN, 48, 38);
 
-    self.calendarContainer.frame = CGRectMake(CALENDAR_MARGIN, CGRectGetMaxY(self.titleLabel.frame), containerWidth, containerHeight);
-    self.daysHeader.frame = CGRectMake(0, 0, self.calendarContainer.frame.size.width, DAYS_HEADER_HEIGHT);
+    
+    
+    
+    self.calendarContainer.frame = CGRectMake(CALENDAR_MARGIN,
+                                              CGRectGetMaxY(self.titleLabel.frame),
+                                              containerWidth,
+                                              containerHeight);
+    self.daysHeader.frame = CGRectMake(0,
+                                       0,
+                                       self.calendarContainer.frame.size.width,
+                                       DAYS_HEADER_HEIGHT);
 
     CGRect lastDayFrame = CGRectZero;
     for (UILabel *dayLabel in self.dayOfWeekLabels) {
@@ -329,6 +340,8 @@
     if ([self.delegate respondsToSelector:@selector(calendar:didLayoutInRect:)]) {
         [self.delegate calendar:self didLayoutInRect:self.frame];
     }
+    
+
 }
 
 - (void)_updateDayOfWeekLabels {
